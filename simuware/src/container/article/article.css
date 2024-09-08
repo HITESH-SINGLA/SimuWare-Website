@@ -1,0 +1,73 @@
+.gpt3__blog-container_article {
+    width: 100%;
+    /* min-height: 100vh; Ensure article takes at least the height of the viewport */
+    display: flex;
+    background-color: #ffffff;
+    flex-direction: column;
+    border: 2px solid #cccccc; /* White border */
+    border-radius: 5px; /* Slightly curved edges */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+    padding: 20px; /* Add padding for better readability */
+    transition: box-shadow 0.3s ease; /* Smooth transition for box-shadow */
+  }
+  
+  /* Hover effect */
+  .gpt3__blog-container_article:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+  }
+  
+.gpt3__blog-container_article-image {
+    width: 20%;
+    height: auto;
+    
+    background: var(--color-bg);
+    
+}
+
+.gpt3__blog-container_article-content img {
+    width: 3rem;
+    
+    
+    
+}
+
+.gpt3__blog-container_article-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 0rem 0.5rem;
+    height: 100%;
+}
+
+.gpt3__blog-container_article-content p {
+    font-family: var(--font-family);
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 35px;
+
+    color: #61aef0;
+}
+
+.gpt3__blog-container_article-content h3 {
+    font-family: var(--font-family);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+    
+    color: #ababab;
+    margin-bottom: 5rem;
+    cursor: pointer;
+}
+
+.gpt3__blog-container_article-content p:last-child {
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 550px) {
+    .gpt3__blog-container_article-content h3 {
+        font-size: 18px;
+        line-height: 25px;
+    }
+}
